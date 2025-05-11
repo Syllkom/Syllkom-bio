@@ -24,14 +24,14 @@
 
 @font-face {
     font-family: 'DEMO-NihStudio';
-    src: url('./fonts/AstrojetsDemoRegular.ttf') format('truetype');
+    src: url('../fonts/AstrojetsDemoRegular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'MADE-Tommy-Soft';
-    src: url('./fonts/MADETommySoftRegularPERSONAL-USE.otf') format('opentype');
+    src: url('../fonts/MADETommySoftRegularPERSONAL-USE.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
