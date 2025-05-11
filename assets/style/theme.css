@@ -1,0 +1,131 @@
+#theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+.theme-panel {
+    position: fixed;
+    bottom: 75px;
+    right: 20px;
+    background-color: var(--color-background);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    transform: translateY(20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.theme-panel.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.theme-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.theme-option {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.theme-option:hover {
+    transform: scale(1.15);
+}
+
+.theme-option.active {
+    border-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.theme-default {
+    background: linear-gradient(135deg, #F1EDE4, #BAB09A);
+}
+
+.theme-dark {
+    background: linear-gradient(135deg, #1a1a1a, #333333);
+}
+
+body.theme-dark {
+    --color-background: #121212;
+    --color-primary: #333333;
+    --color-text: #bbbbbb;
+    --color-text-dark: #cccccc;
+    --color-text-darker: #ffffff;
+    --color-black: #ffffff;
+    --color-white: #f1f1f1;
+    --border-semi-black: rgba(80, 80, 80, 0.2);
+    --border-semi-transp: rgba(100, 100, 100, 0.4);
+    --shadow-light: rgba(0,0,0,0.3);
+    --shadow-medium: rgba(0,0,0,0.5);
+    --shadow-dark: rgba(0,0,0,0.7);
+    --highlight: rgba(255,255,255,0.1);
+    --highlight-faded: rgba(255,255,255,0.15);
+    --ripple-color: rgba(255, 255, 255, 0.3);
+    --glow-color: rgba(150, 150, 150, 0.4);
+    --glow-fade: rgba(100, 100, 100, 0);
+    --shadow-text: rgba(200, 200, 200, 0.2);
+}
+
+.theme-grey {
+    background: linear-gradient(135deg, #888888, #555555);
+}
+
+body.theme-grey {
+    --color-background: #707070;
+    --color-primary: #505050;
+    --color-text: #e0e0e0;
+    --color-text-dark: #f0f0f0;
+    --color-text-darker: #ffffff;
+    --color-black: #ffffff;
+    --color-white: #eeeeee;
+    --border-semi-black: rgba(50, 50, 50, 0.2);
+    --border-semi-transp: rgba(80, 80, 80, 0.5);
+    --shadow-light: rgba(0,0,0,0.15);
+    --shadow-medium: rgba(0,0,0,0.25);
+    --shadow-dark: rgba(0,0,0,0.35);
+    --highlight: rgba(255,255,255,0.2);
+    --highlight-faded: rgba(255,255,255,0.3);
+    --ripple-color: rgba(255, 255, 255, 0.5);
+    --glow-color: rgba(200, 200, 200, 0.4);
+    --glow-fade: rgba(150, 150, 150, 0);
+    --shadow-text: rgba(220, 220, 220, 0.3);
+}
+
+
+
+body, .link-container, .social-icon, .profile-section h1, 
+.profile-section p, .website-link, .website-link a,
+.profile-image-container, .circle-decoration,
+.website-link::before, .website-link::after {
+    transition: all 0.5s ease;
+}
