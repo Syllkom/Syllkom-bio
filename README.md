@@ -38,7 +38,7 @@ Puedes cambiar de tema con el botón flotante de paleta de colores. Si no deseas
 ```html
 <!-- 
   Basado en Syllkom
-  GitHub: https://github.com/Syllkom/HorekuOs
+  GitHub: https://github.com/Syllkom/Syllkom-bio
 -->
 ```
 
